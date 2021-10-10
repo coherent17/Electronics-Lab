@@ -161,7 +161,10 @@ Both channel are DC coupling
         *    $frequency=100kHz$
         *    $V_{high}=5V$
         *    $V_{low}=0V$
-        *    duty cycle=80%（def:高電位出現時間/週期）
+        *    duty cycle=80%
+         ![](https://i.imgur.com/KrcSK1w.png)
+        （def:高電位出現時間/週期）
+
 *    OSC(DC -> AC):
     *    CH1 set DC
     *    CH2 set AC
@@ -221,3 +224,161 @@ Both channel are DC coupling
 * 取樣原理
 * 觸發
 * 耦合
+
+## Lab3
+
+### exp1:
+
+RC circuit:
+![](https://i.imgur.com/Lb9WCxD.png)
+
+#### parameter setting:
+*    FG:
+        *    $sine$
+        *    $V_{pp}=10V$
+*    OSC:
+        *    CH1 to node in(observe the waveform of FG)
+        *    CH2 to node out(observe the waveform pass throught the RC circuit)
+
+#### record:
+1. magnitude of $V_{pp}$ and waveform from node out with different frequencies($5kHz$, $10kHz$, $15kHz$)
+
+#### parameter setting:
+*    FG:
+        *    $square$
+        *    $V_{high}=1V$
+        *    $V_{low}=0V$
+        *    duty cycle = 50%
+*    OSC:
+        *    CH1 to node in(observe the waveform of FG)
+        *    CH2 to node out(observe the waveform pass throught the RC circuit)
+
+#### record:
+1. waveform of node in and out
+2. using cursor to evaluate the time constant of RC circuit: $\tau=RC$
+
+### exp2:
+
+RL circuit:
+![](https://i.imgur.com/a83DMHF.png)
+
+#### parameter setting:
+*    FG:
+        *    $sine$
+        *    $V_{pp}=10V$
+*    OSC:
+        *    CH1 to node in(observe the waveform of FG)
+        *    CH2 to node out(observe the waveform pass throught the RC circuit)
+
+#### record:
+1. magnitude of $V_{pp}$ and waveform from node out with different frequencies($100kHz$, $200kHz$, $300kHz$)
+
+#### parameter setting:
+*    FG:
+        *    $square$
+        *    $V_{high}=1V$
+        *    $V_{low}=0V$
+        *    duty cycle=50%
+*    OSC:
+        *    CH1 to node in(observe the waveform of FG)
+        *    CH2 to node out(observe the waveform pass throught the RC circuit)
+
+#### record:
+1. waveform of node in and out
+2. using cursor to evaluate the time constant of RL circuit: $\tau=L/R$
+
+### exp3:
+
+three part:
+#### part 1(接上喇叭與沒接喇叭波型差別):
+![](https://i.imgur.com/zqXYOOc.png)
+
+##### parameter setting:
+*    FG:
+        *    $sine$
+        *    $f=1kHz$
+        *    $V_{pp}=2V$
+*    OSC:
+        *    CH1 to FG
+
+##### record:
+record the waveform on the OSC
+
+![](https://i.imgur.com/BD9TWUg.png)
+
+##### parameter setting:
+*    FG:
+        *    $sine$
+        *    $f=1kHz$
+        *    $V_{pp}=2V$
+*    OSC:
+        *    CH1 to the node between FG and speaker
+
+##### record:
+record the waveform on the OSC
+
+#### part 2(對喇叭進行XY圖形繪製可以得到電壓對電流的特性曲線):
+![](https://i.imgur.com/TY2u5Oo.png)
+
+##### parameter setting:
+*    FG:
+        *    $sine$, $square$, $ramp$
+        *    $f=1kHz$, $f=10kHz$
+        *    $V_{pp}=2V$
+*    OSC:
+        *    CH1 to the node between FG and speaker
+        *    CH2 to the node between speaker and resistor
+
+##### record:
+1. record the waveform of CH1 and CH2 and the phase difference between them
+2. turn OSC to X-Y mode and record the X-Y mode plot
+3. Listen the sound of different signal shape
+
+### 電容:
+*    透過電場儲存能量
+*    Current voltage relation: $I_C(t)=C\frac{dV_c(t)}{dt}$
+
+### 電感:
+*    透過磁場儲存能量
+*    Current voltage relation: $V_L(t)=L\frac{di_L(t)}{dt}$
+
+### RC circuit:
+![](https://i.imgur.com/6Oqai6E.png)
+![](https://i.imgur.com/1BhNsc2.png)
+![](https://i.imgur.com/Oq8il2k.png)
+![](https://i.imgur.com/AvxE6of.png)
+
+### RL circuit:
+![](https://i.imgur.com/NyqZeyo.png)
+![](https://i.imgur.com/HVh32m8.png)
+![](https://i.imgur.com/jYfq8WB.png)
+![](https://i.imgur.com/8e518zI.png)
+
+
+### 單芯線與喇叭連接:
+1. 剪15~20公分的單芯線
+2. 剝皮
+3. 穿過洞之後扭轉
+4. 焊槍接觸焊錫接觸融化$Sn$ 接觸要焊接的地方，再用$Sn$去碰觸
+
+
+### 切為xy mode
+x-axis為CH1的電壓軸，y-axis為CH2的電壓軸
+![](https://i.imgur.com/F8GqVRa.png)
+---
+#### agilent 2000
+![](https://i.imgur.com/z75RMv7.jpg)
+![](https://i.imgur.com/5BFhOcM.jpg)
+---
+
+注意事項：
+
+零位準對齊
+![](https://i.imgur.com/U3leNsd.jpg)
+![](https://i.imgur.com/TkVAkjQ.jpg)
+刻度調整
+![](https://i.imgur.com/29oxBPH.jpg)
+---
+#### Rigol 2000
+![](https://i.imgur.com/8Yc9o0m.jpg)
+
