@@ -1,0 +1,22 @@
+Circuit: * D:\電機大二上\電子實驗(一)\Lab\Lab3 Basic Component\LTspice_Simulation\RC_circuit\RC_circuit.asc
+
+.OP point found by inspection.
+
+Date: Sat Oct 16 14:47:13 2021
+Total elapsed time: 0.047 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 4764
+traniter = 4764
+tranpoints = 2383
+accept = 1788
+rejected = 595
+matrix size = 12
+fillins = 0
+solver = Normal
+Matrix Compiler1:      15 opcodes  0.1/[0.0]/0.0
+Matrix Compiler2: 688 bytes object code size  0.1/0.1/[0.1]
+
+

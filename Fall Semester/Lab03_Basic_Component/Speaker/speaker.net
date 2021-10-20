@@ -1,0 +1,11 @@
+* D:\¹q¾÷¤j¤G¤W\¹q¤l¹êÅç(¤@)\Lab\Lab3 Basic Component\LTspice_Simulation\Speaker\speaker.asc
+V1 CH1_1k 0 SINE(0 1 1k)
+L1 CH1_1k CH2_1k 100µ Rser=5
+R1 CH2_1k 0 1
+V2 CH1_10k 0 SINE(0 1 10k)
+L2 CH1_10k CH2_10k 100µ Rser=5
+R2 CH2_10k 0 1
+;tran 3m
+.tran 0.9m
+.backanno
+.end
