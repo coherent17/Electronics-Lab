@@ -63,10 +63,6 @@ error = \frac{|V_s-(V_{R1}+V_{R2})|}{V_s}\cdot100\%
 ### exp4:
 了解輸出端接地與正負端的輸出結果
 
-
-### Final Report:
-https://github.com/coherent17/Electronics-Lab/blob/main/Fall%20Semester/Lab01_Instrument-DC/Lab01_RE_Instrument-DC_0811562_%E4%BD%95%E7%A5%81%E6%81%A9.pdf
-
 ## Lab2:
 
 ### how to use OSC?
@@ -257,6 +253,7 @@ RC circuit:
 1. waveform of node in and out
 2. using cursor to evaluate the time constant of RC circuit: $\tau=RC$
 
+
 ### exp2:
 
 RL circuit:
@@ -343,12 +340,16 @@ record the waveform on the OSC
 *    Current voltage relation: $V_L(t)=L\frac{di_L(t)}{dt}$
 
 ### RC circuit:
+$𝜏=RC$
 ![](https://i.imgur.com/6Oqai6E.png)
 ![](https://i.imgur.com/1BhNsc2.png)
+用游標標定 $V_{s}$ 與 0.632$V_{s}$ 之位置，可得time constant
 ![](https://i.imgur.com/Oq8il2k.png)
 ![](https://i.imgur.com/AvxE6of.png)
 
 ### RL circuit:
+$𝜏=L/R$
+
 ![](https://i.imgur.com/NyqZeyo.png)
 ![](https://i.imgur.com/HVh32m8.png)
 ![](https://i.imgur.com/jYfq8WB.png)
@@ -361,24 +362,95 @@ record the waveform on the OSC
 3. 穿過洞之後扭轉
 4. 焊槍接觸焊錫接觸融化$Sn$ 接觸要焊接的地方，再用$Sn$去碰觸
 
+## Lab 4
 
-### 切為xy mode
-x-axis為CH1的電壓軸，y-axis為CH2的電壓軸
-![](https://i.imgur.com/F8GqVRa.png)
----
-#### agilent 2000
-![](https://i.imgur.com/z75RMv7.jpg)
-![](https://i.imgur.com/5BFhOcM.jpg)
----
+放大器: 
+(OP741)
+![](https://i.imgur.com/TLFAL8C.png)
+（TL082）
+![](https://i.imgur.com/qJszpOP.jpg)
+![](https://i.imgur.com/g1STMfn.png)
+擺放方式：
+![](https://i.imgur.com/pRe3Lom.png)
 
-注意事項：
 
-零位準對齊
-![](https://i.imgur.com/U3leNsd.jpg)
-![](https://i.imgur.com/TkVAkjQ.jpg)
-刻度調整
-![](https://i.imgur.com/29oxBPH.jpg)
----
-#### Rigol 2000
-![](https://i.imgur.com/8Yc9o0m.jpg)
+### exp1 Non-inverting Amp. v.s. Inverting Amp.
+ (非反向放大器 v.s.反向放大器)
+ 
+* Non-inverting Amp.
+![](https://i.imgur.com/LM13obQ.jpg)
+    * Part1
+        將輸入接地，形成正輸入與副輸入皆為0的狀態
+        量取此時輸出電壓
+        $V_{in}=0V$
+        Record $V_{out}$ $DC$ $value$
 
+    * Part2
+        * FG input signal:
+            $Sine$
+            $f=500Hz$
+            $V_{pp}=500mV$
+        * record input & output signal 
+        ---
+* Inverting Amp.
+![](https://i.imgur.com/PneLC8J.jpg)
+    * Part3
+        * FG input signal:
+            $Sine$
+            $f=500Hz$
+            $V_{pp}=500mV$
+         * record input & output signal 
+    * Part4
+        量測反向放大器的輸入阻抗
+        * FG input signal:
+            $Sine$
+            $f=500Hz$
+            $V_{pp}=500mV$
+            $R_{adjust}=0$～$10 kΩ$
+        ![](https://i.imgur.com/oRprsoQ.jpg)
+    系統與一個可變電阻串聯為分壓電路 ，輸入一個中間頻率的交流訊號，觀察輸入側與輸出側的電壓大小，因為關係滿足分壓公式$\frac{v_{out}}{v_{in}}=\frac{R_{in}}{R_{x}+R_{in}}$，若刻意選擇讓比值為$\frac{1}{2}$，此時可得到輸入阻抗為可變電阻的大小$R_{in}=R_{x}$
+            
+
+
+
+
+### exp2 Voltage Follower 
+電壓隨耦器 
+> 降低感測器的輸出阻抗，而電壓隨耦器也稱為「單位增益緩衝器」 (unity gain buffer)
+
+連接一個緩衝器
+![](https://i.imgur.com/8WE2sHj.jpg)
+
+* part1（不規定寫入結報）
+輸入任意訊號，觀察輸入與輸出的變化
+* part2
+![](https://i.imgur.com/qO0S5LU.jpg)
+
+    * FG input signal:
+            $Sine$
+            $f=1kHz$
+            $V_{pp}=2V$
+    * OSC+speaker+FG
+    * OSC+FG+buffer+speaker
+    * record the waveform shown on the OSC & $V_{pp}$
+
+
+### exp3 Weighted Adder
+
+
+![](https://i.imgur.com/DuceXn8.jpg)
+
+* 接出一個類比加法器電路
+* 分別以三張波形圖紀錄「in1 & in2」、「in1 & out」、「in2 & out」
+* 用雙通道的FG（Rigol）（確認兩輸入訊號對齊為同步訊號）
+ * FG input signal:
+     * in2:
+            $Square$
+            $f=100Hz$
+            $V_{high}=300mV$
+            $V_{low}=0V$
+     * in1:
+            $Square$
+            $f=100Hz$
+            $V_{high}=1 00mV$
+            $V_{low}=0V$
