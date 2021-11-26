@@ -1,0 +1,73 @@
+Circuit: * D:\電機大二上\電子實驗(一)\Lab\La5 Simulation-LTspice\LTspice\exp4\Draft7.asc
+
+.OP point found by inspection.
+.step v1=0
+.step v1=0.1
+.step v1=0.2
+.step v1=0.3
+.step v1=0.4
+.step v1=0.5
+.step v1=0.6
+.step v1=0.7
+.step v1=0.8
+.step v1=0.9
+.step v1=1
+.step v1=1.1
+.step v1=1.2
+.step v1=1.3
+.step v1=1.4
+.step v1=1.5
+.step v1=1.6
+.step v1=1.7
+.step v1=1.8
+.step v1=1.9
+.step v1=2
+.step v1=2.1
+.step v1=2.2
+.step v1=2.3
+.step v1=2.4
+.step v1=2.5
+.step v1=2.6
+.step v1=2.7
+.step v1=2.8
+.step v1=2.9
+.step v1=3
+.step v1=3.1
+.step v1=3.2
+.step v1=3.3
+.step v1=3.4
+.step v1=3.5
+.step v1=3.6
+.step v1=3.7
+.step v1=3.8
+.step v1=3.9
+.step v1=4
+.step v1=4.1
+.step v1=4.2
+.step v1=4.3
+.step v1=4.4
+.step v1=4.5
+.step v1=4.6
+.step v1=4.7
+.step v1=4.8
+.step v1=4.9
+.step v1=5
+
+Date: Fri Nov 05 17:00:42 2021
+Total elapsed time: 0.069 seconds.
+
+tnom = 27
+temp = 27
+method = trap
+totiter = 3642
+traniter = 0
+tranpoints = 0
+accept = 0
+rejected = 0
+matrix size = 6
+fillins = 0
+solver = Normal
+Matrix Compiler1: 360 bytes object code size  0.1/0.1/[0.1]
+Matrix Compiler2: 462 bytes object code size  0.1/0.1/[0.1]
+
+

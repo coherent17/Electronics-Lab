@@ -1,0 +1,21 @@
+Circuit: * D:\電機大二上\電子實驗(一)\Lab\La5 Simulation-LTspice\LTspice\exp1\R_voltmeter=1M\R_voltmeter=1M.asc
+
+Direct Newton iteration for .op point succeeded.
+
+Date: Fri Nov 05 15:27:48 2021
+Total elapsed time: 0.037 seconds.
+
+tnom = 27
+temp = 27
+method = trap
+totiter = 3
+traniter = 0
+tranpoints = 0
+accept = 0
+rejected = 0
+matrix size = 12
+fillins = 0
+solver = Normal
+Matrix Compiler1: 320 bytes object code size
+Matrix Compiler2: 658 bytes object code size
+

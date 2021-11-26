@@ -1,0 +1,22 @@
+Circuit: * D:\電機大二上\電子實驗(一)\Lab\La5 Simulation-LTspice\LTspice\exp3\RL_circuit.asc
+
+.OP point found by inspection.
+
+Date: Fri Nov 05 15:50:19 2021
+Total elapsed time: 0.027 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 2178
+traniter = 2178
+tranpoints = 1090
+accept = 1077
+rejected = 13
+matrix size = 2
+fillins = 0
+solver = Normal
+Matrix Compiler1: off  [0.0]/0.0/0.0
+Matrix Compiler2: 116 bytes object code size  0.0/0.0/[0.0]
+
+

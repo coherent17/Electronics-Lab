@@ -1,0 +1,22 @@
+Circuit: * D:\電機大二上\電子實驗(一)\Lab\La5 Simulation-LTspice\LTspice\exp1\R_voltmeter=10M\Draft4.asc
+
+.OP point found by inspection.
+
+Date: Fri Nov 05 15:37:24 2021
+Total elapsed time: 0.032 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 2350
+traniter = 2350
+tranpoints = 1176
+accept = 1150
+rejected = 26
+matrix size = 2
+fillins = 0
+solver = Normal
+Matrix Compiler1: 54 bytes object code size  0.0/0.0/[0.0]
+Matrix Compiler2: 116 bytes object code size  0.0/0.0/[0.0]
+
+
