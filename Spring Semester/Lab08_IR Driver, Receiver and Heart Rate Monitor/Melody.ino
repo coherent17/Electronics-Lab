@@ -22,31 +22,17 @@ int durations[] = {
   8, 8, 4, 4, 8, 8, 4, 4, 8, 8, 4, 4, 2  
 };
 
-
 int notes = sizeof(melody) / sizeof(int);
-
-// this calculates the duration of a whole note in ms (60s/tempo)*4 beats
 int wholenote = (60000 * 4) / tempo;
-
 int noteDuration = 0;
 
 void setup() {
-  // iterate over the notes of the melody. 
-  // Remember, the array is twice the number of notes (notes + durations)
   for (int i = 0; i < notes; i++) {
-
-    // calculates the duration of each note
     noteDuration = (wholenote) / durations[i];
-
-    // we only play the note for 90% of the duration, leaving 10% as a pause
     tone(8, melody[i], noteDuration*0.9);
     delay(noteDuration);
-    
-    // stop the waveform generation before the next note.
     noTone(8);
   }
 }
 
-void loop() {
-  // no need to repeat the melody.
-}
+void loop() {}
